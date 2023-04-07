@@ -1,14 +1,14 @@
 # rest-api-typescript
 REST API with NodeJS, Typescript and TypeORM
 
-## Running: 
-Testing
+## General Information: 
+Running:
 ```
 yarn dev
 http://localhost:3000
 ```
 
-Migrations
+Migrations:
 ```
 yarn migration:generate
 yarn migration:run
