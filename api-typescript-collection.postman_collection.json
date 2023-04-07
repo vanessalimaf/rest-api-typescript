@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "dde8c7aa-a7f6-44c0-839e-0aa902c6305a",
+		"name": "api-typescript-collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Criar disciplina",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Física\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/subject",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"subject"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar aula",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Funções de segundo grau\",\r\n    \"description\": \"Aula de resolução de exercícios de funções\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/room",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"room"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar aulas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/room",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"room"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar vídeo de aula",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Multiplicando funções\",\r\n    \"url\": \"https://teste.com.br\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/room/2/create",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"room",
+						"2",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Adicionar disciplina a aula",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"subject_id\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/room/1/subject",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"room",
+						"1",
+						"subject"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
